@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="evo-calendar.min.css" />
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css" />
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+
+<body>
+    
+    <div class="hero">
+        <div id="calendar"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+
+                theme: "Midnight Blue",
+                calendarEvents: [
+                    {
+                        id: 'event1', // Event's ID (required)
+                        name: "Republic Day", // Event name (required)
+                        date: "January/26/2019", // Event date (required)
+                        description: "Today is Republic Day",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event2', // Event's ID (required)
+                        name: "Death of former Goa deputy CM", // Event name (required)
+                        date: "February/15/2019", // Event date (required)
+                        description: "Today is holiday",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event3', // Event's ID (required)
+                        name: "Holi", // Event name (required)
+                        date: "March/21/2019", // Event date (required)
+                        description: "Today is holi , lets celebrate with colors of joy",
+                        type: "holiday", // Event type (required)
+                        everyYear: false // Same event every year (optional)
+                    },
+                    {
+                        id: 'event4', // Event's ID (required)
+                        name: "Gudi padwa", // Event name (required)
+                        date: "April/6/2019", // Event date (required)
+                        description: "happy Gudi padwa",
+                        type: "holiday", // Event type (required)
+                        everyYear: false // Same event every year (optional)
+                    },
+                    {
+                        id: 'event5', // Event's ID (required)
+                        name: "Ambedkar Jayanti", // Event name (required)
+                        date: "April/14/2019", // Event date (required)
+                        description: "Its Ambedkar Jayanti",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event6', // Event's ID (required)
+                        name: "Good Friday", // Event name (required)
+                        date: "April/19/2019", // Event date (required)
+                        description: "Its a good friday",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event7', // Event's ID (required)
+                        name: "Labour day", // Event name (required)
+                        date: "may/1/2019", // Event date (required)
+                        description: "happy Labour Day",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event8', // Event's ID (required)
+                        name: "Eid al-fitr", // Event name (required)
+                        date: "june/4/2019", // Event date (required)
+                        description: "EID mubharak!!",
+                        type: "holiday", // Event type (required)
+                        everyYear: false // Same event every year (optional)
+                    }, {
+                        id: 'event9', // Event's ID (required)
+                        name: "Independance Day", // Event name (required)
+                        date: "Augest/15/2019", // Event date (required)
+                        description: "heyy we are independent in world's largest democracy",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event10', // Event's ID (required)
+                        name: "Gandhi Jayanti", // Event name (required)
+                        date: "October/2/2019", // Event date (required)
+                        description: "Gandhiji was one of the best ever freedom fighter ever!!",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event11', // Event's ID (required)
+                        name: "Diwali", // Event name (required)
+                        date: "October/27/2019", // Event date (required)
+                        description: "happy Diwali ,light up your coding skills",
+                        type: "holiday", // Event type (required)
+                        everyYear: false // Same event every year (optional)
+                    },
+                    {
+                        id: 'event12', // Event's ID (required)
+                        name: "Christmas", // Event name (required)
+                        date: "December/25/2019", // Event date (required)
+                        description: "merry christmas ",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+
+                ]
+
+
+            })
+        })
+
+    </script>
+</body>
+
+
+</html>
